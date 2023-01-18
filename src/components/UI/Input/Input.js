@@ -7,7 +7,6 @@ const Input = React.forwardRef((props, ref) => {
   const activate = () => {
     inputRef.current.focus();
   };
-
   useImperativeHandle(ref, () => {
     return {
       focus: activate,
